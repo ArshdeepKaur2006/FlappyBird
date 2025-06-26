@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #70c5ce; /* sky blue */
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    position: relative;
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+    background-image: url('bgf.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.score {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+}
+
+.gameOver {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: red;
+    visibility: hidden;
+}
+
+.bird {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 70px;
+    height: 60px;
+    background-image: url('bird-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pillar {
+    position: absolute;
+    width: 60px;
+    background-image: url('pillar-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pillar1 {
+    height: 200px;
+    top: 0;
+    left: 100%;
+}
+
+.pillar2 {
+    height: 200px;
+    bottom: 0;
+    left: 100%;
+}
